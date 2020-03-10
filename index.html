@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>MasterPoliva</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/af695fe26b.js" crossorigin="anonymous"></script>
 	<script src="assets/js/viewportchecker.js"></script>
 	<script src="assets/js/main.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<!-- NavBar -->
+	<!-- NavBar 
 	<nav class="navbar fixed-left">
 		<ul class="navbar-nav list-unstyled">
 			<li class="nav-item" id="first_item"><a href="#header"><span>test1</span></a></li>
@@ -21,7 +22,7 @@
 			<li class="nav-item"><a href="#footer"><span>test5</span></a></li>
 		</ul>
 	</nav>
-	<!-- End of NavBar -->
+	 End of NavBar -->
 
 	<!-- Header -->
 	<div class="container-liquid header for_animate">
@@ -43,12 +44,14 @@
 				<br>
 				<div class="row">
 					<div class="col text-center">
-						<button id="join">Создать свой сад</button>
+						<form action="#pay_slide">
+							<button type="submit" id="join">Создать свой сад</button>
+						</form>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col text-center">
-						<a href="">Подробнее о курсе</a>
+						<a href="#third_slide">Подробнее о курсе</a>
 					</div>
 				</div>
 			</div>
@@ -64,35 +67,79 @@
 			<div class="col text-center">
 				<h3>Что вас ждет</h3>
 				<br>
-				<ul class="list-unstyled d-lg-inline">
-					<li>
+				<ul class="list-unstyled first_slide_ul">
+					<li class="col-2 first_slide_li">
 						<div class="row">
-							<div class="col"><i></i></div>
-							<div class="col">10 практических шагов-заданий</div>
+							<div class="col">
+								<div class="row">
+									<div class="col">
+										<i class="fas fa-clipboard-list fa-2x"></i>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">10 практических шагов-заданий</div>
+								</div>
+							</div>
 						</div>
 					</li>
-					<li>
+					<li class="col-2 first_slide_li"></li>
+					<li class="col-2 first_slide_li">
 						<div class="row">
-							<div class="col"><i class="fas fa-tachometer-alt"></i></div>
-							<div class="col">Более 200 готовых схем и планов для быстрого результата</div>
+							<div class="col">
+								<div class="row">
+									<div class="col">
+										<i class="fas fa-tachometer-alt fa-2x"></i>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">Более 200 готовых схем и планов для <strong> быстрого</strong> результата</div>
+								</div>
+							</div>
 						</div>
 					</li>
-					<li>
+					<li class="col-2 first_slide_li"></li>
+					<li class="col-2 first_slide_li">
 						<div class="row">
-							<div class="col"><i class="fas fa-chalkboard-teacher"></i></div>
-							<div class="col">Поддержка опытного(высококлассного) специалиста</div>
+							<div class="col">
+								<div class="row">
+									<div class="col">
+										<i class="fas fa-chalkboard-teacher fa-2x"></i>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">Поддержка опытного(высококлассного) специалиста</div>
+								</div>
+							</div>
 						</div>
 					</li>
-					<li>
+				</ul>
+				<ul class="list-unstyled">
+					<li class="col-4 first_slide_li">
 						<div class="row">
-							<div class="col"><i class="fas fa-book"></i></div>
-							<div class="col">Самые необходимые справочные материалы, которыми пользуются большинство дизайнеров</div>
+							<div class="col">
+								<div class="row">
+									<div class="col">
+										<i class="fas fa-book fa-2x"></i>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">Самые необходимые справочные материалы, которыми пользуются большинство дизайнеров</div>
+								</div>
+							</div>
 						</div>
 					</li>
-					<li>
+					<li class="col-4 first_slide_li">
 						<div class="row">
-							<div class="col"><i></i></div>
-							<div class="col">Помощь в доработке Вашего проекта на личной консультации с дизайнером</div>
+							<div class="col">
+								<div class="row">
+									<div class="col">
+										<i class="fas fa-question fa-2x"></i>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">Помощь в доработке Вашего проекта на личной консультации с дизайнером</div>
+								</div>
+							</div>
 						</div>
 					</li>
 				</ul>
@@ -123,7 +170,7 @@
 			<div class="col text-center">
 				<h3>Программа курса</h3>
 				<br>
-				<ul class="list-unstyled">
+				<ul class="list-inline">
 					<li>
 						<div class="row">
 							<div class="col"><i></i></div>
@@ -203,7 +250,7 @@
 						<br>
 						<ul class="list-unstyled">
 							<li>- Опыт в сфере более 20 лет</li>
-							<li>- Оснавная специальность - агроном-плодоовощевод(МичГАУ)</li>
+							<li>- Основная специальность - агроном-плодоовощевод(МичГАУ)</li>
 							<li>- Практический опыт профессионального озеленения, создания водоёмов , всех видов работ с
 природным камнем, проектирования и монтажа автоматического полива</li>
 							<li>- Более <strong>200</strong> выполненных работ</li>
@@ -219,22 +266,81 @@
 		<!-- Results slide -->
 		<div class="row for_animate" id="results_slide">
 			<div class="col text-center">
-				
+				<h3>Результаты курса не заставят себя ждать</h3>
+				<h4>Что конкретно вы получите в результате занятий?</h4>
+				<ul class="list-unstyled text-left">
+					<li>Свой собственный проект сада, готовый к воплощению в реальность!</li>
+					<li>Для всех предоставивших свой проект – мы дадим возможность заказать у нас необходимый
+посадочный материал и оборудование для устройства полива по оптовым ценам! Тем самым у
+вас появятся огромные шансы преобразовать свой участок или сад уже в этом году!</li>
+				</ul>
 			</div>
 		</div>
 		<!-- End of Results slide -->
-
+		<!-- Bonus slide -->
+		<div class="row for_animate" id="bonus_slide">
+			<div class="col text-center">
+				<h3>Бонусный урок</h3>
+				<span>Создание грамотной системы полива</span>
+			</div>
+		</div>
+		<!-- End of bonus slide -->
 		<!-- pay-slide -->
 		<div class="row for_animate" id="pay_slide">
-			<div class="col-4 text-center">
-				<button class="pay-button"><a href="">Записаться на курс</a></button>
+			<div class="col text-center good_card" id="left_card">
+				<h4>Тариф "Новичок"</h4>
+				<ul class="list-unstyled">
+					<li class="row">
+						<div class="col">Онлайн – курс (10 занятий)</div>
+						<div class="col">
+							<i class="fas fa-check"></i>
+						</div>
+					</li>
+					<li class="row">
+						<div class="col">Записи мастер- классов</div>
+						<div class="col">
+							<i class="fas fa-check"></i>
+						</div>
+					</li>
+					<li class="row">
+						<div class="col">Комплект 100+ схем цветников</div>
+						<div class="col">
+							<i class="fas fa-check"></i>
+						</div>
+					</li>
+					<li class="row">
+						<div class="col">Комплект 15 схем самых практичных древесно-кустарниковых композиций</div>
+						<div class="col">
+							<i class="fas fa-check"></i>
+						</div>
+					</li>
+				</ul>
+				<button class="pay-button">
+					<a href="">Записаться на курс</a>
+				</button>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col text-center good_card premium">
 				<h4>Тариф "Премиум"</h4>
-				<button class="pay-button"><a href="">Записаться на курс</a></button>
+				<ul class="list-unstyled">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<button class="pay-button">
+					<a href="">Записаться на курс</a>
+				</button>
 			</div>
-			<div class="col-4 text-center">
-				<button class="pay-button"><a href="">Записаться на курс</a></button>
+			<div class="col text-center good_card" id="right_card">
+				<h4>Тариф "Быстрая помощь"</h4>
+				<ul class="list-unstyled">
+					<li>Индивидуальная консультация с дизайнером</li>
+					<li>Запись мастер- класса «Ошибки в ЛД»</li>
+				</ul>
+				<button class="pay-button ">
+					<a href="">Записаться на курс</a>
+				</button>
 			</div>
 			<div class="col-12 text-center">
 				<p>После нажатия на кнопку вы будете переведены на другой сайт для оформления записи</p>
