@@ -1,4 +1,25 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@media screen and (max-device-width: 650px){
+	*{
+		font-size: 19pt;
+	}
+	div.header strong{
+		font-size: 25pt !important;
+	}
+	.premium{
+		z-index: 100;
+		height: 596px;
+	}
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1440px){
+	.premium{
+		z-index: 100;
+		height: 586px;
+	}
+}
+*{
+	font-size: 15pt;
+}
 html{
 	width: 100%;
 	overflow-x: hidden; 
@@ -41,6 +62,9 @@ button.pay-button>a:hover{
 	color: #fff;
 	text-decoration: none;
 }
+div.header strong{
+	font-size: 24pt;
+}
 i{
 	color: #000;
 }
@@ -59,13 +83,13 @@ p{
 	margin-bottom: 10px; 
 }
 .first_slide_li{
-	display: inline-block  !important;/*не работает*/
+	display: inline-block  !important;
 }
 .good_card{
 	border-radius: 10px;
 	border: 1px solid #000;
 	padding: 10px; 
-	height: 450px;
+	min-height: 450px;
 }
 .good_card:hover{
 	transition: all 0.4s ease-out;
@@ -81,6 +105,7 @@ p{
 .main_header{
 	background-color: rgba(255,255,255,0.7);
 	min-height: 400px;
+	padding: 20px;
 }
 .main_section{
 	min-height: 1000px;
