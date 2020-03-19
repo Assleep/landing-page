@@ -1,5 +1,5 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@media screen and (max-device-width: 650px){
+@media screen and (max-device-width: 650px) and (max-device-height: 450px){
 	*{
 		font-size: 19pt;
 	}
@@ -9,6 +9,25 @@
 	.premium{
 		z-index: 100;
 		height: 596px;
+	}
+	.header{
+		background-image: url('../img/header_background1.jpg');
+		background-repeat: repeat-x;
+		height: 600px;
+		padding: 0 !important; 
+	}
+	.main_header{
+		background-color: rgba(255,255,255,0.7);
+		height: 600px;
+		padding-top: 5% !important;
+	}
+	#about_slide, #first_slide, #results_slide{
+		height: 600px;
+	}
+	#second_slide{
+		background-color: #F0F0F0;
+		height: 600px;
+		padding-top: 10% !important;
 	}
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1430px){
@@ -202,19 +221,19 @@ p{
 	margin-bottom: 50px;
 }
 .social a{
-	text-align: center;
-	width: 46px;
-	height: 46px;
+	width: 50px;
 	background: #fff;
 	border: 1px solid #ccc;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
-	border-radius: 46px;
-	margin: 0 10px 10px 0;
-	padding: 6px;
-	color: #000;
+	border-radius:40px;
+	padding: 10px;
+	color: #fff;
 }
 .tarif_item{
 	margin-top: 5px;
+}
+.instagram a:hover{
+	background-image:linear-gradient(45deg, rgb(225, 243, 0), rgb(180, 8, 195));
+	color:#fff;
 }
 .vk a:hover{
 	background: #5d84ae;
