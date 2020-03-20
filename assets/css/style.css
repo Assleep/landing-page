@@ -145,8 +145,9 @@ p{
 	min-height: 1000px;
 }
 .header{
-	background-color: #4B5A38;
+	background-image: url('../img/header_background1.jpg');
 	background-repeat: repeat-x;
+	 background-size: cover;
 	min-height: 400px;
 	padding: 0 !important; 
 }
